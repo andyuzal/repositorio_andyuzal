@@ -13,26 +13,12 @@ en todas las paginas del sitio  */
 /* Estilo header*/
 
 .contenedor__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #242423;
     position: sticky;
     top: 0;
 }
 
-.contenedor__header nav ul {
-    display: flex;
-    column-gap: 0.5rem;
-    padding: 0.5rem;
-    list-style: none;
-}
-
-.contenedor__header a {
-    text-decoration: none;
-}
-.contenedor__header h1 {
+.navbar-brand h1 {
     color: #ffff;
     font-size: 3rem;
 }
@@ -41,6 +27,10 @@ en todas las paginas del sitio  */
     color: #ffff;
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+.dropdown-menu {
+    background-color: #242423;
 }
 
 /* Estilo main */
@@ -151,6 +141,7 @@ en todas las paginas del sitio  */
 .contenedor__redes a img {
     width: 1.3rem;
     height: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -172,6 +163,7 @@ en todas las paginas del sitio  */
 
 .contenedor__copyrigt p {
     font-size: 0.6rem;
+    margin-top: 1rem;
 }
 
 /* Responsive pagina Index */
@@ -805,4 +797,30 @@ en todas las paginas del sitio  */
         margin-left: 5rem;
         justify-content: center;
     }
+}
+
+
+/* Estilo Modulo 048*/
+
+.main__modulo048 {
+    height: 100vh;
+}
+
+.button__048 {
+    margin: 2rem;
+}
+
+
+/* Estilo Modulo 058*/
+
+.main__modulo058 {
+    height: 80vh;
+}
+.modulo__058-p {
+    display: flex;
+    justify-content: center;
+}
+
+.button__058 {
+    margin: 2rem;
 }
