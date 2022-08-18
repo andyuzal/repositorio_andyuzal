@@ -809,7 +809,7 @@ en todas las paginas del sitio  */
 /* Estilo Modulo 048*/
 
 .main__modulo048 {
-    height: 100vh;
+    height: 140vh;
 }
 
 .button__048 {
@@ -837,6 +837,19 @@ en todas las paginas del sitio  */
 
 
 /* Media queres Mdoulo 048 */
+
+@media screen and (min-width: 380px) {
+
+    .main__modulo048 {
+        height: 107vh;
+    }
+}
+
+@media screen and (min-width: 413px) {
+    .main__modulo048 {
+        height: 98vh;
+    }
+}
 
 @media screen and (min-width: 1020px){
     .main__modulo048 {
