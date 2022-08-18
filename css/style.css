@@ -62,15 +62,21 @@ en todas las paginas del sitio  */
 .main_buttom {
     grid-area: main_buttom;
     border: 0.1rem solid #242423;
-    background-color: #ffff5c;
+    background-color: #242423;
     box-shadow: 2px 2px #242423;
     border-radius: 0.31rem;
     font-weight: bolder;
     text-decoration: none;
-    color: #242423;
+    color: #adadad;
     margin: 0.5rem 0 0 0;
     padding: 0.3rem;
 }
+
+.main_buttom:hover {
+    color: #242423;
+    background-color: #ffff5c;
+}
+
 .main_img {
     grid-area: main_img;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 33px 70px 4px;
@@ -803,7 +809,7 @@ en todas las paginas del sitio  */
 /* Estilo Modulo 048*/
 
 .main__modulo048 {
-    height: 145vh;
+    height: 100vh;
 }
 
 .button__048 {
@@ -821,6 +827,22 @@ en todas las paginas del sitio  */
     justify-content: center;
 }
 
+.caja__button058 {
+    padding-top: 4rem;
+}
+
 .button__058 {
     margin: 2rem;
+}
+
+
+/* Media queres Mdoulo 048 */
+
+@media screen and (min-width: 1020px){
+    .main__modulo048 {
+        height: 76vh;
+    }
+    .caja__button048 {
+        padding-top: 3rem;
+    }
 }

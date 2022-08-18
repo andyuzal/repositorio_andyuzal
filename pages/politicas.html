@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../logos/Copia de 1.png">
-    <title>Políticas - GrownLAB</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!--tipografia-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+        <!--Favicon-->
+        <link rel="shortcut icon" href="../logos/Copia de 1.png">
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Politicas - GrownLAB</title>
+    </head>
 <body>
-    <header id="encabezado">
-        <div class="container_header_politicas">
-            <a href="../index.html"><h1>GROWNLAB</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../pages/catalogo.html">Catálogo</a></li>
+    <header class="contenedor__header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><h1>Grownlab</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon btn btn-light"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link contenedor__menu--texto" aria-current="page" href="./clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link contenedor__menu--texto" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle contenedor__menu--texto" href="./catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catalogo
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item contenedor__menu--texto" href="./modulo048.html">Modulo 048</a></li>
+                      <li><a class="dropdown-item contenedor__menu--texto" href="./modulo058.html">Modulo 058</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link contenedor__menu--texto" href="./contacto.html">Contacto</a>
+                  </li>
                 </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="../pages/clientes.html">Clientes</a></li>
-                </ul>
-            </nav>
-                <ul>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                </ul>    
-            <nav>
-                <ul>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                 </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <div class="container_main_politicas">
@@ -42,21 +58,24 @@
             <h3>Terminos y condiciones</h3>
         </div>
     </main>
-    <footer>
-        <div class="container_footer_politicas">
-             <img src="../logos/2.png" alt="logo_grownlab">
-              <a href="./politicas.html" target="_blank">Políticas</a>
-             <a href="../pages/catalogo.html" target="_blank">Catálogo</a>
-             <a href="../pages/contacto.html" target="_blank">Contacto</a>
-             <a href="#encabezado">Ir al encabezado</a>
-             <br> <br>
-              <a href="https://www.instagram.com/grownlab.uy/" target="_blank"><img src="../icons/instagram.png" alt="Instagram"></a>
-             <a href="https://api.whatsapp.com/send?phone=59898518818" target="_blank"><img src="../icons/whatsapp.png" alt="Whatsapp"></a>
-              <a href="mailto:mailto:grownlabuy@gmail.com"><img src="../icons/email.png" alt="Mail"></a>
-             <br>
-              <img src="../icons/derechos-de-autor.png" alt="Copyright">
-             <h6>Copyrigth GrownLab iluminación LED. Todos los derechos reservados.</h6>
+    <footer class="contenedor__footer">
+        <div class="contenedor__textos">
+            <img class="contenedor__footer--logo" src="../logos/5.jpg" alt="logo_grownlab">
+            <a href="./politicas.html" target="_blank">Políticas</a>
+            <a href="./catalogo.html" target="_blank">Catálogo</a>
+            <a href="./contacto.html" target="_blank">Contacto</a>
+        </div>
+        <div class="contenedor__redes">
+            <a class="contenedor__redes--insta" href="https://www.instagram.com/grownlab.uy/" target="_blank"><img src="../icons/instagram.png" alt="Instagram"></a>
+             <a class="contenedor__redes--wpp" href="https://api.whatsapp.com/send?phone=59898518818" target="_blank"><img src="../icons/whatsapp.png" alt="Whatsapp"></a>
+             <a class="contenedor__redes--mail" href="mailto:mailto:grownlabuy@gmail.com"><img src="../icons/email.png" alt="Mail"></a>
+        </div>
+        <div class="contenedor__copyrigt">
+             <img src="../icons/derechos-de-autor.png" alt="Copyright">
+             <p>Copyrigth GrownLab iluminación LED. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
