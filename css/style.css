@@ -820,7 +820,7 @@ en todas las paginas del sitio  */
 /* Estilo Modulo 058*/
 
 .main__modulo058 {
-    height: 85vh;
+    height: 77vh;
 }
 .modulo__058-p {
     display: flex;
@@ -828,12 +828,10 @@ en todas las paginas del sitio  */
 }
 
 .caja__button058 {
-    padding-top: 4rem;
+   padding: 2rem 1rem 0.5rem 1rem;
 }
 
-.button__058 {
-    margin: 2rem;
-}
+
 
 
 /* Media queres Mdoulo 048 */
@@ -857,5 +855,26 @@ en todas las paginas del sitio  */
     }
     .caja__button048 {
         padding-top: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main__modulo048 {
+        height: 95vh;
+    }
+}
+
+/* Media queres Mdoulo 058 */
+
+@media screen and (min-width: 380px) {
+
+    .main__modulo058 {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 413px) {
+    .main__modulo058 {
+        height: 81vh;
     }
 }
