@@ -288,8 +288,8 @@ paginas del sitio */
     box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4); }
 
 /* Estilo section */
-/* Seccion cultivadores */
-.contenedor__mainclientes--cultivadores {
+/* Secciones cultivadores, clubes cannabicos, grows, empresas */
+.contenedor__mainclientes--cultivadores, .contenedor__mainclientes--clubes, .contenedor__mainclientes--grows, .contenedor__mainclientes--empresas {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,54 +299,9 @@ paginas del sitio */
   border-bottom: 1px solid #242423;
   border-top: 1px solid #242423;
   gap: 0.5rem; }
-  .contenedor__mainclientes--cultivadores h4 {
+  .contenedor__mainclientes--cultivadores h4, .contenedor__mainclientes--clubes h4, .contenedor__mainclientes--grows h4, .contenedor__mainclientes--empresas h4 {
     font-size: 2.5rem; }
-  .contenedor__mainclientes--cultivadores img {
-    width: 65%;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
-
-/* Seccion club cannabico */
-.contenedor__mainclientes--clubes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 2rem;
-  border-bottom: 1px solid #242423;
-  gap: 0.5rem; }
-  .contenedor__mainclientes--clubes h4 {
-    font-size: 2.5rem; }
-  .contenedor__mainclientes--clubes img {
-    width: 65%;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
-
-/* Seccion grows */
-.contenedor__mainclientes--grows {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 2rem;
-  border-bottom: 1px solid #242423;
-  gap: 0.5rem; }
-  .contenedor__mainclientes--grows h4 {
-    font-size: 2.5rem; }
-  .contenedor__mainclientes--grows img {
-    width: 65%;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
-
-/* Seccion empresas */
-.contenedor__mainclientes--empresas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 2rem;
-  border-bottom: 1px solid #242423;
-  gap: 0.5rem; }
-  .contenedor__mainclientes--empresas h4 {
-    font-size: 2.5rem; }
-  .contenedor__mainclientes--empresas img {
+  .contenedor__mainclientes--cultivadores img, .contenedor__mainclientes--clubes img, .contenedor__mainclientes--grows img, .contenedor__mainclientes--empresas img {
     width: 65%;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
 
@@ -365,10 +320,10 @@ paginas del sitio */
 @media screen and (min-width: 1020px) {
   .contenedor__mainclientes div {
     gap: 3rem; }
-  .contenedor__mainclientes--cultivadores {
+  .contenedor__mainclientes--cultivadores, .contenedor__mainclientes--clubes, .contenedor__mainclientes--grows, .contenedor__mainclientes--empresas {
     flex-direction: row;
     gap: 3rem; }
-    .contenedor__mainclientes--cultivadores img {
+    .contenedor__mainclientes--cultivadores img, .contenedor__mainclientes--clubes img, .contenedor__mainclientes--grows img, .contenedor__mainclientes--empresas img {
       width: 37%; }
   .contenedor__mainclientes--clubes {
     flex-direction: row;
@@ -587,7 +542,8 @@ paginas del sitio */
 /* Estilo Modulo 048*/
 /* Estilo Main */
 .main__modulo048 {
-  height: 140vh; }
+  height: 140vh;
+  margin-top: 1rem; }
 
 .button__048 {
   margin: 2rem; }
@@ -611,22 +567,32 @@ paginas del sitio */
   .main__modulo048 {
     height: 95vh; } }
 
+@media screen and (min-width: 1070px) {
+  .main__modulo048 {
+    height: 77vh; } }
+
 /* Estilo Modulo 058*/
 .main__modulo058 {
-  height: 77vh; }
+  height: 77vh;
+  margin-top: 1rem; }
 
 .modulo__058-p {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
 
 .caja__button058 {
-  padding: 2rem 1rem 0.5rem 1rem; }
+  padding: 2rem 1rem 0.5rem 1rem;
+  margin-top: 1rem; }
 
 /* Media queres Mdoulo 058 */
 @media screen and (min-width: 380px) {
   .main__modulo058 {
-    height: 80vh; } }
+    height: 78vh; } }
 
 @media screen and (min-width: 413px) {
   .main__modulo058 {
-    height: 81vh; } }
+    height: 81vh;
+    padding-top: 3rem; }
+  .caja__button058 {
+    margin-top: 4rem; } }
