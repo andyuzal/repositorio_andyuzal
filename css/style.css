@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Reset */
 * {
   padding: 0;
@@ -13,7 +12,8 @@ paginas del sitio */
 .contenedor__header {
   background-color: #242423;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 .navbar-brand h1 {
   color: #ffff;
@@ -26,6 +26,11 @@ paginas del sitio */
 
 .dropdown-menu {
   background-color: #242423; }
+
+.contenedor__menu--texto:hover {
+  color: #242423;
+  background-color: #ffff;
+  border-radius: 10px; }
 
 /* Estilo main */
 .contenedor__divmain {
@@ -62,7 +67,7 @@ paginas del sitio */
     grid-area: main_img;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 33px 70px 4px;
     margin-top: 1.5rem;
-    width: 85%; }
+    width: 40%; }
 
 /* Estilo section */
 .contenedor__section {
@@ -71,7 +76,7 @@ paginas del sitio */
   justify-content: center;
   align-items: center;
   column-gap: 0.5rem;
-  margin: 1rem;
+  margin: 2rem;
   text-align: center;
   padding: 1rem; }
   .contenedor__section div h4 {
@@ -80,6 +85,8 @@ paginas del sitio */
   .contenedor__section div h5 {
     font-size: 1rem;
     padding: 0.3rem; }
+  .contenedor__section div img {
+    width: 30%; }
 
 /* Estilo footer */
 .contenedor__footer {
@@ -139,7 +146,8 @@ paginas del sitio */
     grid-template-rows: 0.5fr 0.1fr 0.5fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "main_h2 main_img" "main_p main_img" "main_buttom main_img";
-    height: auto; }
+    height: auto;
+    margin: 0.5rem; }
     .contenedor__divmain h2 {
       align-self: self-end;
       font-size: 1.5rem;
@@ -181,7 +189,7 @@ paginas del sitio */
   .contenedor__divmain h2 {
     font-size: 2rem; }
   .contenedor__divmain img {
-    width: 60%; }
+    width: 40%; }
   .contenedor__divmain p {
     font-size: 1.3rem; }
   .contenedor__section {
@@ -343,28 +351,6 @@ paginas del sitio */
 
 /* Estilo pagina nosotros */
 /* Estilo Main */
-.contenedor__mainnosotros--transition {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 40px;
-  background-color: #242423;
-  color: #adadad;
-  cursor: grab; }
-
-.contenedor__mainnosotros--transition span {
-  transition: .5s linear; }
-
-.contenedor__mainnosotros--transition:hover span:nth-child(1) {
-  margin-right: 15px; }
-
-.contenedor__mainnosotros--transition:hover span:nth-child(1):after {
-  content: ", LIDERES EN ILUMINACIÓN"; }
-
-.contenedor__mainnosotros--transition:hover span {
-  color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 40px #fff; }
-
 .contenedor__mainnosotros--que {
   display: flex;
   flex-flow: column;
@@ -447,97 +433,50 @@ paginas del sitio */
 
 /* Responsive pagina Nosotros */
 /* Media queries Tablet I pad Air */
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 819px) {
   .contenedor__mainnosotros {
     height: 86vh; }
   .contenedor__mainnosotros--img img {
-    width: 17%; } }
+    width: 41%; } }
 
 /* Media queries Desktop */
 @media screen and (min-width: 1020px) {
   .contenedor__mainnosotros {
-    height: 102vh; }
+    height: 90vh; }
   .contenedor__mainnosotros--img {
     gap: 11rem; }
     .contenedor__mainnosotros--img img {
       width: 14%; } }
 
+@media screen and (min-width: 1024px) {
+  .contenedor__mainnosotros {
+    height: 110vh; } }
+
+@media screen and (min-width: 1279px) {
+  .contenedor__mainnosotros {
+    height: 90vh; } }
+
 /* Estilo pagina Contacto */
 /* Estilo main */
-.contenedor__maincontacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  width: 55vh; }
-  .contenedor__maincontacto form {
-    border: 1px solid #242423;
-    box-shadow: -4px -4px #242423; }
-    .contenedor__maincontacto form div {
-      font-size: 1.25rem;
-      padding: 0.6rem 3.75rem;
-      text-align: center; }
-  .contenedor__maincontacto img {
-    display: none;
-    box-shadow: #fafa76 0px 54px 55px, #fcfc70 0px -12px 30px, #f8f873 0px 4px 6px, #fdfd70 0px 12px 13px, #fafa74 0px -3px 5px; }
-  .contenedor__maincontacto .contenedor__campos--cliente {
-    cursor: context-menu; }
-  .contenedor__maincontacto .contenedor__campos--check {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6rem; }
-  .contenedor__maincontacto .contenedor__campos--terminos {
-    text-align: center; }
-    .contenedor__maincontacto .contenedor__campos--terminos a {
-      text-decoration: none; }
-  .contenedor__maincontacto .contenedor__campos--text {
-    border: 1px solid #000; }
-  .contenedor__maincontacto .contenedor__campos--botones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0.6rem;
-    padding-right: 1.87rem;
-    gap: 0.6rem; }
+.container {
+  margin-bottom: 2rem; }
 
-/* Responsive pagina CATALOGO */
-/* Media queries Mobile, Iphone XR and 12pro */
-@media screen and (min-width: 390px) {
-  .contenedor__maincontacto {
-    width: 47vh;
-    margin-bottom: 16rem;
-    margin-top: 6rem;
-    margin-left: 4rem;
-    padding: 0rem; } }
+.boton__enviar {
+  margin-bottom: 0.5rem; }
 
-/* Media queries Tablet ipad mini */
-@media screen and (min-width: 766px) {
-  .contenedor__maincontacto {
-    flex-direction: row;
-    gap: 3rem;
-    width: 74vh;
-    margin-bottom: 24rem; }
-    .contenedor__maincontacto img {
-      display: block;
-      width: 40%;
-      margin-left: 5rem; } }
+.form__boot {
+  border: 2px solid #242423;
+  padding: 1rem; }
 
-/* Media queries Tablet ipad air */
-@media screen and (min-width: 820px) {
-  .contenedor__maincontacto {
-    width: 68vh;
-    margin-bottom: 34rem; } }
+.terminos--condiciones a {
+  color: #242423;
+  text-decoration: none; }
 
-/* Media queries Desktop */
-@media screen and (min-width: 1020px) {
-  .contenedor__maincontacto {
-    width: 140vh;
-    margin-bottom: 11rem;
-    margin-left: 5rem;
-    justify-content: center; } }
+.form-select {
+  margin-bottom: 1rem; }
+
+.consultas {
+  margin-bottom: 1rem; }
 
 /* Estilo Modulo 048*/
 /* Estilo Main */
