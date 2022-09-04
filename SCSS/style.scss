@@ -764,9 +764,12 @@ paginas del sitio */
 }
 
 .container__main--info2{
+    border: 1px solid $color1;
+    padding: 1rem;
     h2{
         color: $color1;
         text-align: center;
+        text-decoration: underline;
     }
     p{
         text-align: start;
@@ -788,9 +791,15 @@ paginas del sitio */
     .container__main--politicas {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         gap: 3rem;
         height: 83vh;
-        margin: 0;
+    }
+}
+
+@media screen and (min-width:819px){
+    .container__main--politicas {
+        margin: 1.5rem;
+        height: 84vh;
     }
 }

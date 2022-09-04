@@ -557,15 +557,18 @@ paginas del sitio */
   align-items: center;
   margin: 1rem;
   padding: 1rem;
-  background-color: #dbd7d7; }
+  background-color: #f0efef; }
 
-.container__main--info2 h2 {
-  color: #242423;
-  text-align: center; }
-
-.container__main--info2 p {
-  text-align: start;
-  color: #242423; }
+.container__main--info2 {
+  border: 1px solid #242423;
+  padding: 1rem; }
+  .container__main--info2 h2 {
+    color: #242423;
+    text-align: center;
+    text-decoration: underline; }
+  .container__main--info2 p {
+    text-align: start;
+    color: #242423; }
 
 .container__main--info1 h2 {
   text-decoration: underline;
@@ -577,7 +580,11 @@ paginas del sitio */
   .container__main--politicas {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
-    height: 83vh;
-    margin: 0; } }
+    height: 83vh; } }
+
+@media screen and (min-width: 819px) {
+  .container__main--politicas {
+    margin: 1.5rem;
+    height: 84vh; } }
