@@ -548,3 +548,23 @@ paginas del sitio */
     padding-top: 3rem; }
   .caja__button058 {
     margin-top: 4rem; } }
+
+/* Estillo pagina politicas */
+.container__main--politicas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5; }
+
+.container__main--info2 h2 {
+  color: #242423;
+  text-align: center; }
+
+.container__main--info2 p {
+  text-align: start;
+  color: #242423; }
+
+/* Media queries pagina Politicas */
