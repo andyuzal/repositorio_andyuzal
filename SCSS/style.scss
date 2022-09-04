@@ -763,8 +763,6 @@ paginas del sitio */
     background-color: $color7;
 }
 
-
-
 .container__main--info2{
     h2{
         color: $color1;
@@ -776,5 +774,23 @@ paginas del sitio */
     }
 } 
 
+.container__main--info1 {
+    h2{
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+
 /* Media queries pagina Politicas */
-/* Media querie 
+/* Media queries Tablet*/
+
+@media screen and (min-width:768px){
+    .container__main--politicas {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        height: 83vh;
+        margin: 0;
+    }
+}
