@@ -66,7 +66,13 @@ paginas del sitio */
     background-color: $color3;
     border-radius: 10px;
 }
-
+.navbar-toggler {
+    border-radius: none;
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 /* Estilo main */ 
 
 .contenedor__divmain {
@@ -187,7 +193,7 @@ paginas del sitio */
 .contenedor__copyrigt {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 0.3rem;
     border-top: 0.04rem solid $color3;
@@ -305,6 +311,12 @@ paginas del sitio */
     column-gap: 3rem;
     margin: 1.5rem 1rem;
     height: 70vh;
+    p{
+        border: 1px solid $color1;
+        border-radius: 5px;
+        padding: 0.5rem;
+        box-shadow: 3px 3px $color2;
+    }
 }
 .main__048 {
     grid-area: main__048;
@@ -673,6 +685,11 @@ paginas del sitio */
 
 .consultas {
     margin-bottom: 1rem;
+}
+
+.terminos__condiciones--a:hover {
+    color: $color8;
+    text-decoration: underline;
 }
 
 /* Estilo Modulo 048*/
